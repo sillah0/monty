@@ -58,6 +58,7 @@ void pushError(FILE *fd, char *buffer, unsigned int line_number, stack_t *stack)
 void not_ins(FILE *fd, char *buffer, unsigned int line_number, stack_t *stack, char *cmd);
 int isDigit(char *arg);
 void free_stack(stack_t *stack);
+void pint_function(stack_t **stack, unsigned int line_number);
 
 
 #endif
