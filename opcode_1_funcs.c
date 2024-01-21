@@ -23,8 +23,8 @@ void add_function(stack_t **stack, unsigned int line_number)
 
 /**
  * sub_function - diffrencebtwn 2 elements
- * @satck: a pointer
- * @line_number _ line number
+ * @stack: a pointer
+ * @line_number: line number
 */
 void sub_function(stack_t **stack, unsigned int line_number)
 {
