@@ -44,3 +44,24 @@ void pop_function(stack_t **stack, unsigned int line_number)
 		free(temp);
 	}
 }
+
+/**
+ * swap_function - function to swap two top elements
+ * @stack: a pointer to a pointer
+ * @line_number: line number to track
+*/
+void swap_function(stack_t **stack, unsigned int line_number)
+{
+	stack_t *temp = *stack;
+	int i;
+
+	if (!*stack || !stack || !(*stack)->next)
+	{
+		fprintf(stderr, "L%u: can't swap, stack too short\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+
+	i = temp->n;
+	temp->n = temp->next->n;
+	temp->next->n = i;
+}

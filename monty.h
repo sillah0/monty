@@ -60,6 +60,7 @@ int isDigit(char *arg);
 void free_stack(stack_t *stack);
 void pint_function(stack_t **stack, unsigned int line_number);
 void pop_function(stack_t **stack, unsigned int line_number);
+void swap_function(stack_t **stack, unsigned int line_number);
 
 
 #endif
