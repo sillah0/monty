@@ -123,6 +123,7 @@ int executor(int line_number, char *command, char *arg, stack_t **stack)
 		{"pop", pop_function},
 		{"swap", swap_function},
 		{"add", add_function},
+		{"nop", nop_function},
 		{NULL, NULL}
 	};
 

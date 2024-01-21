@@ -65,3 +65,14 @@ void swap_function(stack_t **stack, unsigned int line_number)
 	temp->n = temp->next->n;
 	temp->next->n = i;
 }
+
+/**
+ * nop_function - does nothing
+ * @stack: a pointer
+ * @line_number: line number
+*/
+void nop_function(stack_t **stack, unsigned int line_number)
+{
+	(void)stack;
+	(void)line_number;
+}
